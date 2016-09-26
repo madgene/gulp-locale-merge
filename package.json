@@ -1,6 +1,6 @@
 {
   "name": "gulp-locale-merge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp plugin to merge locale json files into one file",
   "main": "index.js",
   "scripts": {
