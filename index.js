@@ -31,6 +31,10 @@ module.exports = function(filename) {
       return this.emit('error', new PluginError('gulp-locale-merge', 'Streaming not supported'));
     }
 
+    if (!file.contents.toString()) {
+      return this.emit('error', new PluginError('gulp-locale-merge', 'empty json file: ' + file.path));
+    }
+
     var keyPrefix = dirname.split('/').join('.') + '.';
     var content = JSON.parse(file.contents.toString());
     content && Object.keys(content).forEach(function(key) {
@@ -50,8 +54,6 @@ module.exports = function(filename) {
       path: joinedPath,
       contents: new Buffer(JSON.stringify(data, null, 2))
     });
-
-    console.log('end stream', JSON.stringify(data, null, 2));
 
     this.emit('data', joinedFile);
     this.emit('end');
