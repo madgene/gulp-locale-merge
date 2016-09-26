@@ -1,0 +1,30 @@
+{
+  "name": "gulp-locale-merge",
+  "version": "1.0.0",
+  "description": "Gulp plugin to merge locale json files into one file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madgene/gulp-locale-merge.git"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "locale",
+    "merge",
+    "json"
+  ],
+  "author": "Duke Deng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madgene/gulp-locale-merge/issues"
+  },
+  "homepage": "https://github.com/madgene/gulp-locale-merge#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through": "^2.3.8"
+  }
+}
